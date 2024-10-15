@@ -18,6 +18,11 @@ body{
     border-radius: 5px;
     background-color: bisque;
     box-shadow: 0 10px 10px #3339;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .form-group{
     margin-bottom: 15px;
@@ -26,20 +31,29 @@ body{
 .form-container h2{
     text-align: center;
     margin-bottom: 10px;
+    width: 200px;
 }
 .form-container label{
     display: block;
 }
+
 .form-group input{
     border: 1px solid #000;
     background-color: transparent;
     padding: 3px;
-    width: 100%;
     outline: none;
 }
 
-input[type="radio"]{
-    width: 30px;
+.form-group input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+.form-group fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem;
+    text-align: start;
 }
 
 .form-group button{
@@ -56,12 +70,12 @@ input[type="radio"]{
         transition: all 0.2s ease-in;
     }
 }
-.form-group select{
+/* .form-group select{
     border: 1px solid #000;
     background-color: transparent;
     padding: 3px;
     width: 100%;
-}
+} */
 .info-container{
     border: 2px solid black;
     padding: 20px;
@@ -69,9 +83,11 @@ input[type="radio"]{
     background-color: bisque;
     box-shadow: 0 10px 10px #3339;
     font-size: 20px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
-.info-container span{
+/* .info-container span{
     display: flex;
     gap: 5px;
     align-items: center;
@@ -79,4 +95,4 @@ input[type="radio"]{
         font-size: 20px;
         color: #333;
     }
-}
+} */
